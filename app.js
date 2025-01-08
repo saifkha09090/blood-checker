@@ -8,12 +8,8 @@ let result = document.getElementById("resultText");
 
 
 function checkInput() {
-    if (userName.value === '') {
-        alert("Please enter your name");
-    }else if (age.value === '') {
-        alert("Please enter your age");  
-    }else if (bloodType.value === '') {
-        alert("Please select a blood type");
+    if (userName.value === '' || age.value === '' || bloodType.value === '') {
+        alert("Please fill all inputs");
     }else {
         checkBloodType();
     }
