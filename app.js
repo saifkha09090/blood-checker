@@ -1,7 +1,6 @@
 let userName = document.getElementById("name");
 let age = document.getElementById("age");
 let bloodType = document.getElementById("bloodType");
-3;
 let resultBox = document.getElementById("resultBox");
 let result = document.getElementById("resultText");
 
