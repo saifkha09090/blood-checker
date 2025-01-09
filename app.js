@@ -1,5 +1,7 @@
 let userName = document.getElementById("name");
+let age = document.getElementById("age");
 let bloodType = document.getElementById("bloodType");
+3;
 let resultBox = document.getElementById("resultBox");
 let result = document.getElementById("resultText");
 
@@ -26,4 +28,8 @@ function checkBloodType() {
     result.innerText = "Please select a blood type";
   }
   resultBox.style.display = "block";
+  
+  userName.value = "";
+  age.value = "";
+  bloodType.value = "";
 }
