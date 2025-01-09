@@ -1,22 +1,7 @@
 let userName = document.getElementById("name");
-let age = document.getElementById("age");
 let bloodType = document.getElementById("bloodType");
-let error = document.getElementById("error");
 let resultBox = document.getElementById("resultBox");
 let result = document.getElementById("resultText");
-
-
-
-function checkInput() {
-    if (userName.value === '' || age.value === '' || bloodType.value === '') {
-        alert("Please fill all inputs");
-    }else {
-        checkBloodType();
-    }
-    userName.value = '';
-    age.value = '';
-    bloodType.value = '';
-}
 
 function checkBloodType() {
   let bloodTypeValue = bloodType.value;
@@ -40,5 +25,5 @@ function checkBloodType() {
   } else {
     result.innerText = "Please select a blood type";
   }
-    resultBox.style.display = "block";
+  resultBox.style.display = "block";
 }
